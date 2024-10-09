@@ -13,13 +13,13 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @SpringBootApplication
 @EnableFeignClients
 @EnableEurekaClient
-@EntityScan({"com.galileo.cu.commons.models"})
+@EntityScan({ "com.galileo.cu.commons.models" })
 @EnableAuthorizationServer
-public class SpringbootServicioOauthApplication implements CommandLineRunner{
+public class SpringbootServicioOauthApplication implements CommandLineRunner {
 
 	@Autowired
 	private BCryptPasswordEncoder passwordEncode;
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootServicioOauthApplication.class, args);
 	}
@@ -27,14 +27,14 @@ public class SpringbootServicioOauthApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		String password = "12345";
-		
+
 		for (int i = 0; i < 4; i++) {
 			String passwordBCrypt = passwordEncode.encode(password);
 			System.out.println(passwordBCrypt);
 		}
 		System.out.println("**************************************");
-		System.out.println("OAUTH-V-0806-13:20");
-		
+		System.out.println("OAUTH V-24-10-09 09:23");
+
 	}
 
 }
