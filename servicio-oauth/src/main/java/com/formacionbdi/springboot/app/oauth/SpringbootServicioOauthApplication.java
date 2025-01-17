@@ -33,7 +33,7 @@ public class SpringbootServicioOauthApplication implements CommandLineRunner {
 			System.out.println(passwordBCrypt);
 		}
 		System.out.println("**************************************");
-		System.out.println("OAUTH V-1.1.4 24-12-24 13:59");
+		System.out.println("OAUTH V-1.1.5 25-01-17 10:41");
 
 	}
 
